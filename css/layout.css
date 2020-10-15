@@ -151,6 +151,7 @@ ul#nav {
 
    /* center align the menu */
    text-align: center;
+   font-size: small;
 }
 ul#nav li {
    position: relative;
