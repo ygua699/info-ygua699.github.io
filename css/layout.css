@@ -296,6 +296,7 @@ ul#nav li.current a { color: #F06000; }
   	margin-top: 36px;
    list-style: none;
 }
+
 .bars li {
    position: relative;
   	margin-bottom: 60px;
@@ -312,6 +313,10 @@ ul#nav li.current a { color: #F06000; }
    position: relative;
 	top: -36px;
 }
+
+.bars li span:hover {
+   background: #F06000;
+}
 .bar-expand {
    position: absolute;
    left: 0;
@@ -324,6 +329,7 @@ ul#nav li.current a { color: #F06000; }
   	height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
+   transition: 0.3s;
 }
 
 .photoshop {
