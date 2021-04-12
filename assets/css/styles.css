@@ -166,7 +166,6 @@ img {
 .nav__logo {
   color: var(--second-color);
   font-size: 30px;
-
 }
 .nav__toggle {
   color: var(--second-color);
@@ -228,14 +227,17 @@ img {
 /*BUTTONS*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
+  border: #4070f4 solid 2px;
+  background-color: #fff;
+  color: var(--first-color);
   padding: 0.75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
+  transition: color 300ms, background-color 300ms;
 }
 .button:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+  background-color: var(--first-color);
+  color: #fff;
 }
 
 /* ===== ABOUT =====*/
@@ -467,7 +469,6 @@ body {
 .dark-mode {
   background-color: black;
   color: white;
-  
 }
 
 .dark-mode .l-header {
@@ -483,3 +484,12 @@ body {
   color: white;
 }
 
+.dark-mode .button {
+  background-color: black;
+  color: var(--first-color);
+}
+
+.dark-mode .button:hover {
+  background-color: var(--first-color);
+  color: #fff;
+}
