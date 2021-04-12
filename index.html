@@ -1,867 +1,247 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-   <title>Melo Guan</title>
-   <meta name="description" content="">
-   <meta name="author" content="">
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Melo Guan</title>
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
 
-   <!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-   <link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-   <!-- Script
-   ================================================== -->
-   <script src="js/modernizr.js"></script>
-   <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-   <link rel="shortcut icon" href="favicon.png">
-
-</head>
-
-<body>
-
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Moment</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Hi.<br>I'm Melo Guan.</h1>
-            <h3>I'm a <span>Computer Science</span> student at the University of Auckland. I love <span>coding</span>.
-               Let's <a class="smoothscroll" href="#about">start scrolling</a>
-               and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
+            <div class="nav__logo" id="darkModeIcron" >
+                <i class="bx bxs-moon" onclick="toggleTheme();" style="cursor: pointer;"></i>
+            </div>
 
 
-            <ul class="social">
-               <li><a target="_blank" href="https://www.linkedin.com/in/melo-guan-74a47418a/"><i
-                        class="fa fa-linkedin"></i></a></li>
-               <!-- <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100006650474854"><i
-                        class="fa fa-facebook"></i></a></li> -->
-               <li><a target="_blank" href="https://www.instagram.com/ya.g.525/?hl=en"><i
-                        class="fa fa-instagram"></i></a></li>
-               <li><a target="_blank" href="https://github.com/ygua699"><i class="fa fa-github"></i></a></li>
-               <li>
-                  <div class="item-wrap">
-                     <a href="#wechatQRcode" title=""><i class="fa fa-weixin"></i></a>
-                  </div>
-               </li>
-            </ul>
-         </div>
-      </div>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <!-- <li class="nav__item">
+                <i class="bx bxl-linkedin" onclick="toggleTheme('light');"></i>
+            </li> -->
+          </ul>
+        </div>
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="fa fa-angle-double-down"></i></a>
-      </p>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-   </header> <!-- Header End -->
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Melo</span
+            ><br />Software Engineer
+          </h1>
 
+          <a href="mailto:meloguan123@gmail.com" class="button">Contact</a>
+        </div>
 
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
+        <div class="home__social">
+          <a
+            href="https://www.linkedin.com/in/melo-guan-74a47418a/"
+            class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=100006650474854" class="home__social-icon"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/ya.g.525/?hl=en" class="home__social-icon"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="https://github.com/ygua699" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
 
-      <div class="row">
+        <div class="home__img">
+          <img src="assets/img/perfil.png" alt="" />
+        </div>
+      </section>
 
-         <div class="three columns">
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-            <img class="profile-pic" src="images/profilepic.jpg" alt="" />
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.jpg" alt="" />
+          </div>
 
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>A highly motivated, proactive, responsive university student from the University of
-               Auckland. I have a real passion for learning computer and IT skills. I am also optimistic
-               and active, able to take the initiative and work under pressure. I have strong
-               interpersonal skill and cooperate well with others in a team.
-               <br>I like playing basketball.
+          <div>
+            <h2 class="about__subtitle">I'am Melo</h2>
+            <p class="about__text">
+              A highly motivated, proactive, responsive university student from
+              the University of Auckland. I have a real passion for learning
+              computer and IT skills. I am also optimistic and active, able to
+              take the initiative and work under pressure. I have strong
+              interpersonal skill and cooperate well with others in a team.
             </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-                     <span>Melo Guan</span><br>
-                     <span>Great South Rd, Greenlane<br>
-                        Auckland, New Zealand
-                     </span><br>
-                     <span>(+64) 21-0221-2196</span><br>
-                     <span>meloguan123@gmail.com</span>
-                  </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="Melo Guan Resume.pdf" class="button" download="Melo Guan Resume"><i
-                           class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>The University of Auckland</h3>
-                  <p class="info">Bachelor's Degree (Computer Science) <span>&bull;</span> <em class="date">2019 - 2021
-                     </em></p>
-
-                  <p>
-                  <ul>
-                     <strong>Activities and Societies:</strong><br>
-                     <li>GENERAL EXECUTIVE
-                        <br>WDCC - Web Development & Consulting Club
-                        <br>&#149; Worked as a productive and positive team member to design, code, test,
-                        report and debug operations.
-                        <br>&#149; Managed front-end and back-end development for the web application.
-                        <br>&#149; Successfully identified, diagnosed, and fixed website problems, including
-                        broken links, typographical errors and formatting issues.
-                     </li>
-                     <li>TECHNICAL SUPPORT<br>
-                        NZCSA - New Zealand Chinese Students' Association
-                        <br>&#149; Team support with Information Technology.
-                        <br>&#149; Designing and implementing auto email by using Google Script.
-                     </li>
-                     <li>TECHNOLOGIST<br>
-                        AUMDS - The University of Auckland Mandarin Debating Society
-                        <br>&#149; Team support with Information Technology.
-                     </li>
-
-                     <strong>Certification:</strong><br>
-                     <li>&#149; Object Oriented Software Development</li>
-                     <li>&#149; Computer Organisation</li>
-                     <li>&#149; Software Fundamentals</li>
-                     <li>&#149; Principles of Programming</li>
-                  </ul>
-
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Auckland Grammar School</h3>
-                  <p class="info">High School Diploma <span>&bull;</span> <em class="date">2015 - 2018 </em></p>
-
-                  <p>
-                  <ul>
-                     <strong>Activities and Societies:</strong><br>
-                     <li>BAND VOCAL & CHOIR MEMBER
-                        <br>&#149; AGS x EGGS Chinese Extravaganza
-                     </li>
-                     <li>KOREAN VOICE<br>
-                        &#149; AGS x EGGS Korean Night
-                     </li>
-                     <li>U17A BASKETBALL PLAYER<br>
-                        &#149; Department of Sports
-                     </li>
-                  </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>The University of Auckland </h3>
-                  <p class="info">Teaching Assistant <span>&bull;</span> <em
-                        class="date">Jan 2021 - Present</em>
-                  </p>
-
-                  <p>
-                  <ul>
-                     <li>&#149; Lab Demonstrator for Computer Science Stage 1 course.</li>
-                  </ul>
-
-                  </p>
-
-               </div>
-
-               <div class="twelve columns">
-
-                  <h3>KPMG New Zealand </h3>
-                  <p class="info">Summer Intern <span>&bull;</span> <em
-                        class="date">Nov 2020 - Dec 2020</em>
-                  </p>
-
-                  <p>
-                  <ul>
-                     <li>&#149; Auckland Virtual Internship Project Consultant</li>
-                     <li>&#149; Analysis and Recommendations of Publicly Available NZ Police datasets in Safety Aspects.</li>
-                  </ul>
-
-                  </p>
-
-               </div>
-
-               <div class="twelve columns">
-
-                  <h3>Latitude Technologies Limited </h3>
-                  <p class="info">Software Engineer Intern <span>&bull;</span> <em class="date">Sep 2020 - Nov 2020</em>
-                  </p>
-
-                  <p>
-                  <ul>
-                     <li>&#149; Web application development by using .Net Core.</li>
-                     <li>&#149; Designing, developing test plans and implementing by automated testing tools and
-                        programs.</li>
-                     <li>&#149; Create logs to document testing phases and defects.</li>
-                     <li>&#149; Deliver thorough QA testing reports that determined product quality and release
-                        readiness.</li>
-                  </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Schengen International Group NZ Ltd </h3>
-                  <p class="info">Academic Tutor <span>&bull;</span> <em class="date">March 2020 - Nov 2020</em></p>
-
-                  <p>
-                  <ul>
-                     <li>&#149; Teaching python fundamentals and programming principles to high school
-                        students.</li>
-                  </ul>
-
-
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p id="skillP">In everyday life, the development of life skills helps students to:
-               Find new ways of thinking and problem solving.
-               Recognise the impact of their actions and teaches them to take responsibility for what they do rather
-               than blame others.
-               Build confidence both in spoken skills and for group collaboration and cooperation
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              In everyday life, the development of life skills helps students
+              to: Find new ways of thinking and problem solving. Recognise the
+              impact of their actions and teaches them to take responsibility
+              for what they do rather than blame others. Build confidence both
+              in spoken skills and for group collaboration and cooperation
             </p>
-
-            <div class="bars">
-
-               <ul class="skills">
-                  <li><span class="bar-expand photoshop"></span><em>Python</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Java</em></li>
-                  <li><span class="bar-expand wordpress"></span><em>C#</em></li>
-                  <li><span class="bar-expand css"></span><em>CSS</em></li>
-                  <li><span class="bar-expand html5"></span><em>HTML</em></li>
-                  <li><span class="bar-expand jquery"></span><em>Javascript</em></li>
-                  <li><span class="bar-expand swift"></span><em>Swift</em></li>
-               </ul>
-
-            </div><!-- end skill-bars -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Favorites.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/chinese.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Chinese Band</h5>
-                              <p>Chinese Extravaganza</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/korean.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Korean Voice</h5>
-                              <p>Korean Night</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/chinese1.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Chinese Choir</h5>
-                              <p>Chinese Extravaganza</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/wdcc.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>WDCC</h5>
-                              <p>Web Development & Consulting Club</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/nzcsa.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>NZCSA</h5>
-                              <p>New Zealand Chinese Students' Association</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/nba.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Basketball</h5>
-                              <p>Sports</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> <!-- item end -->
-
-               <!-- <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/nba.png">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Origami</h5>
-                              <p>Illustrration</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div>
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/retrocam.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-                              <h5>Retrocam</h5>
-                              <p>Web Development</p>
-                           </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-               </div> -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="wechatQRcode" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/WechatIMG129.jpeg" alt="" />
-
-            <div class="description-box">
-               <span class="categories"><i class="fa fa-tag"></i>Add me to friend</span>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML5</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
             </div>
-
-            <div class="link-box">
-               <a href="https://www.wechat.com/en/" target="_blank">Wechat</a>
-               <a class="popup-modal-dismiss">Close</a>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS3</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
             </div>
-
-         </div>
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fctjWHvxlq4" frameborder="0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-               allowfullscreen></iframe>
-
-            <div class="description-box">
-               <h4>Chinese Band</h4>
-               <p>In 2018, me and Michael Huang performed a Chinese song called 饿狼传说 by Jacky Cheung, and also This Love
-                  in Chinese by Maroon 5.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Music, Singing</span>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
             </div>
-
-            <div class="link-box">
-               <a href="https://www.facebook.com/chineseextrav/?ref=page_internal" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">UX/UI</span>
+              </div>
+              <div class="skills__bar skills__ux"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
             </div>
+          </div>
 
-         </div><!-- modal-01 End -->
+          <div>
+            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
 
-         <div id="modal-02" class="popup-modal mfp-hide">
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
 
-            <img class="scale-with-grid" src="images/portfolio/modals/korean1.jpg" alt="" />
+        <div class="work__container bd-grid">
+          <div class="work__img">
+            <img src="assets/img/work1.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work2.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work3.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work4.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work5.jpg" alt="" />
+          </div>
+          <div class="work__img">
+            <img src="assets/img/work6.jpg" alt="" />
+          </div>
+        </div>
+      </section>
 
-            <div class="description-box">
-               <h4>Korean Voice</h4>
-               <p>Joined Korean Singing group in 2017 when I was in High School. Impressed by the awesome Korean songs.
-               </p>
-               <span class="categories"><i class="fa fa-tag"></i>Music, Choir</span>
-            </div>
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
 
-            <div class="link-box">
-               <a href="https://www.facebook.com/Koreannight" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
+        <div class="contact__container bd-grid">
+          <!-- <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input
+              type="button"
+              value="Enviar"
+              class="contact__button button"
+            />
+          </form> -->
+          <h1 style="margin: 100px 5px">meloguan123@gmail.com</h1>
+        </div>
+      </section>
+    </main>
 
-         </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/chinese2.jpg" alt="" />
-
-            <div class="description-box">
-               <h4>Chinese Choir</h4>
-               <p>Had a wonderful memory with choir members. Learned many popular Chinese songs.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Choir, Singing</span>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.facebook.com/chineseextrav/?ref=page_internal" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/wdcc1.jpg" alt="" />
-
-            <div class="description-box">
-               <h4>WDCC</h4>
-               <p>WDCC is a developers’ community that provides web development services for all UoA clubs and student
-                  groups.
-                  We aim to provide a platform to further student’s understanding of the industry, as well as developing
-                  student’s technical skills.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Web Development</span>
-            </div>
-
-            <div class="link-box">
-               <a href="https://www.wdcc.co.nz/" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-04 End -->
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/nzcsa1.jpg" alt="" />
-
-            <div class="description-box">
-               <h4>NZCSA</h4>
-               <p>The New Zealand Chinese Students’ Association is an incorporated student society that aims to serve
-                  the Chinese students in New Zealand,
-                  promoting the Chinese Culture and act as a bridge between the Chinese student community and the local
-                  mainstream community. </p>
-               <span class="categories"><i class="fa fa-tag"></i>Association</span>
-            </div>
-
-            <div class="link-box">
-               <a href="http://nzcsa.com/" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
-
-            <div class="description-box">
-               <h4>Basketball</h4>
-               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                  elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-            </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
-
-            <div class="description-box">
-               <h4>Origami</h4>
-               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                  elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-            </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-            <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
-
-            <div class="description-box">
-               <h4>Retrocam</h4>
-               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                  elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-            </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-               <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-         </div><!-- modal-01 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Melo Guan</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">melo</span></h2>
-            <p><span class="lead">Today, making money is very simple.
-                  But making sustainable money while being responsible to the society and improving the world is very
-                  difficult.
-               </span></p>
-         </div>
-
-         <div class="three columns action">
-
-
-
-         </div>
-
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Melo</p>
+      <div class="footer__social">
+        <a
+          href="https://www.linkedin.com/in/melo-guan-74a47418a/"
+          class="footer__icon"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=100006650474854" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/ya.g.525/?hl=en" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="https://github.com/ygua699" class="footer__icon"><i class="bx bxl-github"></i></a>
       </div>
+      <p>Melo Guan &#169; 2021</p>
+    </footer>
 
-   </section> <!-- Call-To-Action Section End-->
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Melo Guan</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Sometimes when you innovate, you make mistakes.
-                              It is best to admit them quickly, and get on with improving your other innovations.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>If all my bridge coach ever told me was that I was ‘satisfactory,’ I would have no hope of
-                              ever getting better.
-                              How would I know who was the best? How would I know what I was doing differently?
-                           </p>
-                           <cite>Bill Gates</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>No matter how tough the chase is, you should always have the dream you saw on the first
-                              day.
-                              It’ll keep you motivated and rescue you (from any weak thoughts)
-                           </p>
-                           <cite>Jack Ma</cite>
-                        </blockquote>
-                     </li>
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-      </div> <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-      <div class="row section-head">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get In Touch.</span></h1>
-
-         </div>
-
-         <div class="ten columns">
-
-            <p class="lead">Learn more about me, my web development skills,
-               and my way of learning. Or, if you’re ready to start discussing what you need,
-               contact me by email at meloguan123@gmail.com or by using Wechat :).
-            </p>
-
-         </div>
-
-      </div>
-
-
-
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a target="_blank" href="https://www.linkedin.com/in/melo-guan-74a47418a/"><i
-                        class="fa fa-linkedin"></i></a></li>
-               <!-- <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100006650474854"><i
-                        class="fa fa-facebook"></i></a></li> -->
-               <li><a target="_blank" href="https://www.instagram.com/ya.g.525/?hl=en"><i
-                        class="fa fa-instagram"></i></a></li>
-               <li><a target="_blank" href="https://github.com/ygua699"><i class="fa fa-github"></i></a></li>
-               <li>
-                  <div class="item-wrap">
-                     <a href="#wechatQRcode" title=""><i class="fa fa-weixin"></i></a>
-                  </div>
-               </li>
-            </ul>
-
-            <ul class="copyright">
-               <li>Version 1.0.3 </li>
-               <li>Implemented by <a href="https://www.linkedin.com/in/melo-guan-74a47418a/" target="_blank">Melo</a>
-               </li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a>
-         </div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
-</body>
-
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
