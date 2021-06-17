@@ -1,219 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="assets/css/styles.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Melo Guan</title>
-    <link rel="shortcut icon" href="favicon.png" />
-  </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div class="nav__logo" id="darkModeIcron">
-          <i
-            class="bx bxs-moon"
-            onclick="toggleTheme();"
-            style="cursor: pointer"
-          ></i>
-        </div>
+  <!-- =====BOX ICONS===== -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet" />
 
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active">Home</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-            <!-- <li class="nav__item">
+  <title>Melo Guan</title>
+  <link rel="shortcut icon" href="favicon.png" />
+</head>
+
+<body>
+  <!--===== HEADER =====-->
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div class="nav__logo" id="darkModeIcron">
+        <i class="bx bxs-moon" onclick="toggleTheme();" style="cursor: pointer"></i>
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+          <!-- <li class="nav__item">
                 <i class="bx bxl-linkedin" onclick="toggleTheme('light');"></i>
             </li> -->
-          </ul>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <!--===== HOME =====-->
+    <section class="home bd-grid" id="home">
+      <div class="home__data">
+        <h1 class="home__title">
+          Hi,<br />I'am <span class="home__title-color">Melo</span><br /><span style="font-size:xxx-large;"> Software
+            Developer</span>
+        </h1>
+
+        <a href="mailto:meloguan123@gmail.com" class="button">Contact</a>
+      </div>
+
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/melo-guan-74a47418a/" class="home__social-icon"><i
+            class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100006650474854" class="home__social-icon"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/ya.g.525/?hl=en" class="home__social-icon"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://github.com/ygua699" class="home__social-icon"><i class="bx bxl-github"></i></a>
+      </div>
+
+      <div class="home__img">
+        <img src="assets/img/perfil.png" alt="" style="border-radius: 50%" />
+      </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+
+      <div class="about__container bd-grid">
+        <div class="about__img">
+          <img src="assets/img/about.jpg" alt="" />
         </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Melo</span
-            ><br />Software Engineer
-          </h1>
-
-          <a href="mailto:meloguan123@gmail.com" class="button">Contact</a>
-        </div>
-
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/melo-guan-74a47418a/"
-            class="home__social-icon"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100006650474854"
-            class="home__social-icon"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/ya.g.525/?hl=en"
-            class="home__social-icon"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://github.com/ygua699" class="home__social-icon"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
-
-        <div class="home__img">
-          <img src="assets/img/perfil.png" alt="" style="border-radius: 50%" />
-        </div>
-      </section>
-
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="assets/img/about.jpg" alt="" />
-          </div>
-
-          <div>
-            <h2 class="about__subtitle">I'am Melo</h2>
-            <p class="about__text">
-              A highly motivated, proactive, responsive university student from
-              the University of Auckland. I have a real passion for learning
-              computer and IT skills. I am also optimistic and active, able to
-              take the initiative and work under pressure. I have strong
-              interpersonal skill and cooperate well with others in a team.
-            </p>
+        <div>
+          <h2 class="about__subtitle">I'am Melo</h2>
+          <p class="about__text">
+            A highly motivated, proactive, responsive university student from
+            the University of Auckland. I have a real passion for learning
+            computer and IT skills. I am also optimistic and active, able to
+            take the initiative and work under pressure. I have strong
+            interpersonal skill and cooperate well with others in a team.
+          </p>
           </br>
-            <p class="about__text">
-              Currently second year Computer Science student at The University
-              of Auckland.
-            </p>
-            <a href="https://www.auckland.ac.nz/en.html" target="_blank"><img
-              class="UniLogo"
-              src="https://www.indcareer.com/studyabroad/wp-content/uploads/2014/05/University-of-Auckland.png"
-            /></a>
-            
-          </div>
+          <p class="about__text">
+            Currently second year Computer Science student at The University
+            of Auckland.
+          </p>
+          <a href="https://www.auckland.ac.nz/en.html" target="_blank"><img class="UniLogo"
+              src="https://www.indcareer.com/studyabroad/wp-content/uploads/2014/05/University-of-Auckland.png" /></a>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
 
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Profesional Skills</h2>
-            <p></p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-credit-card-front skills__icon"></i>
-                <span class="skills__name">Frontend</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-              <div>
-                <span class="skills__percentage">95%</span>
-              </div>
+      <div class="skills__container bd-grid">
+        <div>
+          <h2 class="skills__subtitle">Profesional Skills</h2>
+          <p></p>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxs-credit-card-front skills__icon"></i>
+              <span class="skills__name">Frontend</span>
             </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-server skills__icon"></i>
-                <span class="skills__name">Backend</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-data skills__icon"></i>
-                <span class="skills__name">Database</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
-              <div>
-                <span class="skills__percentage">65%</span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">UX/UI</span>
-              </div>
-              <div class="skills__bar skills__ux"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
+            <div class="skills__bar skills__html"></div>
+            <div>
+              <span class="skills__percentage">95%</span>
             </div>
           </div>
-
-          <div>
-            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxs-server skills__icon"></i>
+              <span class="skills__name">Backend</span>
+            </div>
+            <div class="skills__bar skills__css"></div>
+            <div>
+              <span class="skills__percentage">85%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxs-data skills__icon"></i>
+              <span class="skills__name">Database</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+            <div>
+              <span class="skills__percentage">65%</span>
+            </div>
+          </div>
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class="bx bxs-paint skills__icon"></i>
+              <span class="skills__name">UX/UI</span>
+            </div>
+            <div class="skills__bar skills__ux"></div>
+            <div>
+              <span class="skills__percentage">85%</span>
+            </div>
           </div>
         </div>
-      </section>
 
-      <!--===== WORK =====-->
-      <section class="work section" id="work">
-        <h2 class="section-title">Projects</h2>
-
-        <div class="work__container bd-grid">
-          <a href="http://nzcsa.com"
-            ><div class="work__img">
-              <img src="assets/img/aboutusbg.jpg" alt="NZCSA" />
-              <h1
-                style="
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  font-size: 50px;
-                  color: white;
-                  transform: translate(-50%, -50%);
-                  -ms-transform: translate(-50%, -50%);
-                "
-              >
-                NZCSA
-              </h1>
-            </div></a
-          >
+        <div>
+          <img src="assets/img/work3.jpg" alt="" class="skills__img" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--===== CONTACT =====-->
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+      <h2 class="section-title">Projects</h2>
 
-        <div class="contact__container bd-grid">
-          <!-- <form action="" class="contact__form">
+      <div class="work__container bd-grid">
+        <a href="http://nzcsa.com">
+          <div class="work__img">
+
+            <img src="assets/img/aboutusbg.jpg" alt="NZCSA" />
+            <span>NZCSA Website</span>
+          </div>
+        </a>
+        <a href="https://github.com/UoaWDCC/NZCSA-Frontend">
+          <div class="work__img">
+
+            <img
+              src="https://images.unsplash.com/photo-1591267990532-e5bdb1b0ceb8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1013&q=80"
+              alt="NZCSA" />
+            <span>NZCSA Web App Frontend</span>
+          </div>
+        </a>
+        <a href="https://github.com/UoaWDCC/NZCSA-Backend">
+          <div class="work__img">
+
+            <img
+              src="https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80"
+              alt="NZCSA" />
+            <span>NZCSA Web App Backend</span>
+          </div>
+        </a>
+      </div>
+
+    </section>
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact__container bd-grid">
+        <!-- <form action="" class="contact__form">
             <input type="text" placeholder="Name" class="contact__input" />
             <input type="mail" placeholder="Email" class="contact__input" />
             <textarea
@@ -229,39 +219,30 @@
               class="contact__button button"
             />
           </form> -->
-          <h1 style="margin: 100px 5px">meloguan123@gmail.com</h1>
-        </div>
-      </section>
-    </main>
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">Melo</p>
-      <div class="footer__social">
-        <a
-          href="https://www.linkedin.com/in/melo-guan-74a47418a/"
-          class="footer__icon"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100006650474854"
-          class="footer__icon"
-          ><i class="bx bxl-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/ya.g.525/?hl=en" class="footer__icon"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a href="https://github.com/ygua699" class="footer__icon"
-          ><i class="bx bxl-github"></i
-        ></a>
+        <h1 style="margin: 100px 5px">meloguan123@gmail.com</h1>
       </div>
-      <p>Melo Guan &#169; 2021</p>
-    </footer>
+    </section>
+  </main>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+  <!--===== FOOTER =====-->
+  <footer class="footer">
+    <p class="footer__title">Melo</p>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/in/melo-guan-74a47418a/" class="footer__icon"><i
+          class="bx bxl-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100006650474854" class="footer__icon"><i
+          class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/ya.g.525/?hl=en" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+      <a href="https://github.com/ygua699" class="footer__icon"><i class="bx bxl-github"></i></a>
+    </div>
+    <p>Melo Guan &#169; 2021</p>
+  </footer>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!--===== SCROLL REVEAL =====-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!--===== MAIN JS =====-->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
